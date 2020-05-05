@@ -1,24 +1,4 @@
 # Starter pipeline
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo 'Hello world'
-      TARGET="/var/www/html/project 
-      if [ -d $TARGET ]
-      then
-      echo "Directory exists."
-      else
-      echo "Error: Directory /path/to/dir does not exists. Creating directory"
-      mkdir $TARGET
-      echo "Directory Creation Success"
-      fi
-      echo "Moving Config Files"
-      echo $(System.DefaultWorkingDirectory)
-      cp -r $(System.DefaultWorkingDirectory)\/_testapacheazure/* $TARGET/
-      echo "All Config Files moved"
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
