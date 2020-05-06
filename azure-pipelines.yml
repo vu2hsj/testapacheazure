@@ -6,7 +6,7 @@
       # Write your commands here
       
       echo 'Hello world'
-      TARGET="/var/www/html/project 
+      TARGET="/var/www/html/"
       if [ -d $TARGET ]
       then
       echo "Directory exists."
