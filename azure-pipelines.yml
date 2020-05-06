@@ -4,7 +4,6 @@
     targetType: 'inline'
     script: |
       # Write your commands here
-      
       echo 'Hello world'
       TARGET="/var/www/html/"
       if [ -d $TARGET ]
@@ -17,7 +16,7 @@
       fi
       echo "Moving Config Files"
       echo $(System.DefaultWorkingDirectory)
-      cp -r $(System.DefaultWorkingDirectory)\/_testapacheazure/* $TARGET/
+      cp -r $(System.DefaultWorkingDirectory)\/testproject/* $TARGET/
       echo "All Config Files moved"
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
